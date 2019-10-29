@@ -1,0 +1,18 @@
+@mixin titel ($color, $family, $size) {
+    color: $color;
+    font-family: $family;
+    font-size: $size;
+    font-weight: 400;
+}
+
+.welcome {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    .welcome_to {
+        @include titel(#fcf9f7, Baskerville, 72px);
+    }
+    .yourcompany {
+        @include titel(#d7794a, Athelas, 48px);
+    }
+}
